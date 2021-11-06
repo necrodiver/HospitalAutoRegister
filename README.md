@@ -1,7 +1,7 @@
 ## 医院挂号使用教程  
 #### 注意：本程序只供学习交流娱乐之用,由此产生任何纠纷由使用者自己承担!本人概不负责！侵删！  
 #### 介绍：北京大学口腔医院，挂号   
-#### mac文件夹为mac执行挂号程序,windows为window执行程序（暂未打包），按需下载    
+#### mac文件夹为mac执行挂号程序,windows为window执行程序，按需下载    
 ---  
 #### 使用说明：
 1. 启用抓包工具（我这里使用的是Proxyman），可以抓小程序的微信授权登录，调用接口```https://bdkq.leanpay.cn/weixin-miniapp-bdkq@default/wechat/login.json```的登录参数  
