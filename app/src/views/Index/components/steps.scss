@@ -1,0 +1,43 @@
+.step-content {
+    min-width: 600px;
+    min-height: 400px;
+    padding: 10px 20px 40px 20px;
+
+    .item-content {
+        min-height: 260px;
+
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 16px;
+
+            .item-left {
+                flex: none;
+                width: 160px;
+                font-weight: 500;
+                font-size: 18px;
+                color: #333;
+            }
+
+            .item-right {
+                flex: 1;
+
+                .ant-input {
+                    width: 100%;
+                    font-size: 14px;
+                    color: #666;
+                    line-height: 16px;
+                }
+            }
+        }
+
+
+    }
+
+    .step-footer {
+        width: 100%;
+        padding-top: 50px;
+    }
+
+}
