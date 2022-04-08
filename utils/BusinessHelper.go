@@ -123,7 +123,7 @@ func GetYyScheduleInfo(data YyScheduleInfo) string {
 
 func CreateOrder(data OrderInfo) string {
 	url := "/api/appointmentRecord/YysamedayAppointment.json"
-	dataStr := "{\"patientId\":" + data.PatientId + ",\"scheduleId\":\"" + data.ScheduleId + "\",\"visitDate\":\"" + data.VisitDate + "\",\"deptId\":\"" + data.DeptId + "\",\"sguId\":\"" + data.SguId + "\",\"dist\":\"0\"}"
+	dataStr := "{\"patientId\":" + data.PatientId + ",\"scheduleId\":\"" + data.ScheduleId + "\",\"visitDate\":\"" + data.VisitDate + "\",\"deptId\":\"" + data.DeptId + "\",\"sguId\":\"" + data.SguId + "\",\"dist\":\"" + data.TapIndex + "\"}"
 	encryData, _ := EncryTokenInPost(dataStr, XTOKEN, url)
 	res := PostHttpDataToJson(encryData)
 	return res
