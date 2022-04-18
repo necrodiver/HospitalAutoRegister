@@ -79,7 +79,7 @@ const App = defineComponent({
                 return {
                     label: `${item.date} (${item.displayWeek})`,
                     value: item.date,
-                    disabled: item.amount !== 0
+                    disabled: item.amount <= 0
                 };
             });
         };
